@@ -1,0 +1,67 @@
+{
+  "MOV": {
+    "type": "Data Transfer",
+    "description": "Copies data from source operand to destination operand"
+  },
+  "ADD": {
+    "type": "Arithmetic",
+    "description": "Adds source operand to destination operand"
+  },
+  "SUB": {
+    "type": "Arithmetic",
+    "description": "Subtracts source operand from destination operand"
+  },
+  "INC": {
+    "type": "Arithmetic",
+    "description": "Increments the operand by 1"
+  },
+  "DEC": {
+    "type": "Arithmetic",
+    "description": "Decrements the operand by 1"
+  },
+  "MUL": {
+  "type": "Arithmetic",
+  "description": "Unsigned multiply. Multiplies the source operand by the accumulator (AL or AX) and stores the result in AX or DX:AX."
+  },
+ 
+"DIV": {
+  "type": "Arithmetic",
+  "description": "Unsigned divide. Divides AX or DX:AX by the source operand; quotient stored in AL or AX, remainder in AH or DX."
+},
+"AND": {
+  "type": "Logical",
+  "description": "Performs bitwise AND between source and destination operands."
+},
+"OR": {
+  "type": "Logical",
+  "description": "Performs bitwise OR between source and destination operands."
+},
+"XOR": {
+  "type": "Logical",
+  "description": "Performs bitwise XOR between source and destination operands."
+},
+"NOT": {
+  "type": "Logical",
+  "description": "Performs bitwise NOT (inverts all bits) of the operand."
+},
+"SHL": {
+  "type": "Shift/Rotate",
+  "description": "Shifts bits of the operand left by a specified count; zero bits are shifted in."
+},
+"SHR": {
+  "type": "Shift/Rotate",
+  "description": "Shifts bits of the operand right by a specified count; zero bits are shifted in."
+},
+"JMP": {
+  "type": "Control Transfer",
+  "description": "Unconditional jump to the specified address."
+},
+"CMP": {
+  "type": "Comparison",
+  "description": "Compares two operands by subtracting source from destination without storing the result; sets flags accordingly."
+},
+"XCHG": {
+  "type": "Data Transfer",
+  "description": "Exchanges the contents of the source operand with the destination operand"
+}
+}
